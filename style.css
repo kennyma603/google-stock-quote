@@ -1,0 +1,87 @@
+body{
+	background: #260930;
+	font-size: 12px;
+	font-family: arial;
+	color: #fff;
+}
+
+h1{
+	font-size: 26px;
+	padding: 0 0 0px 10px;
+}
+
+#quotesWrapper{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.quote{
+	float: left;
+	width: 280px;
+	padding: 20px 20px;
+	color: #fff;
+	margin: 5px 5px;
+    background: -moz-linear-gradient(left center , #479EA8 1%, #53B6BC 98%) repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#479EA8', endColorstr='#53B6BC'); /* for IE */
+	background: -webkit-gradient(linear, left top, center bottom, from(#479EA8), to(#53B6BC)); /* for webkit browsers */
+    border: 1px solid #59B0B6; 
+	text-align: right;
+	position: relative;
+}
+
+.quote *{
+	padding-left: 120px;
+}
+
+.quote .name{
+	font-size: 16px;
+	padding-bottom: 5px;
+	min-height: 46px;
+	height: auto !important;
+	height: 46px;
+}
+
+.quote .changePercentage{
+	font-size: 22px;
+	font-style: italic;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	margin: 10px auto;
+	background: #f4f4f4;
+	border-radius: 50px;
+	padding: 0px;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+	.quote .changePercentage span{
+		position: relative;
+		top: 35px;
+		padding: 0;
+		color: black;
+	}
+	.quote.up{
+	    background: -moz-linear-gradient(left center , #7CA024 3%, #9AB92F 98%) repeat scroll 0 0 transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7CA024', endColorstr='#9AB92F'); /* for IE */
+		background: -webkit-gradient(linear, left top, center bottom, from(#7CA024), to(#9AB92F)); /* for webkit browsers */	    
+	    border: 1px solid #AAB662;
+	}
+	.quote.up .changePercentage span{
+		color: green;
+	}
+	.quote.down{
+		background: -moz-linear-gradient(left center , #652D9A 3%, #7F37B5 98%) repeat scroll 0 0 transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#652D9A', endColorstr='#7F37B5'); /* for IE */
+		background: -webkit-gradient(linear, left top, center bottom, from(#652D9A), to(#7F37B5)); /* for webkit browsers */	    
+	    border: 1px solid #8148B1;
+	}
+	.quote.down .changePercentage span{
+		color: red;
+	}
+
+
+.quote .lastTradeTime{
+	display: none;
+}
