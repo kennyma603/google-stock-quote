@@ -1,3 +1,27 @@
+/* Reset browser styles
+------------------------------------------ */
+* {margin: 0; padding: 0}
+html {min-height: 100%;}
+body {background: #fff; color: #444; font: 0.75em/1.5 "Arial", "Helvetica", sans-serif; }
+[class] {list-style: none; padding: 0}
+h1, h2, h3, h4, h5, h6 {font-size: 1em}
+dt {font-weight: 700}
+table {border-collapse: collapse}
+img {border: none; vertical-align: middle}
+a {color: #6c97d0; text-decoration: none; outline: none; cursor: pointer}
+a:hover {color: #85c300; text-decoration: underline}
+textarea, input, select, option, optgroup, button {font: 1em "Arial", "Helvetica", sans-serif}
+button, [type="radio"], [type="checkbox"], [type="submit"], [type="button"], [type="reset"], label[for], select {cursor: pointer}
+input, select, textarea {outline: none}
+fieldset {overflow: hidden; border: none;}
+legend {display: none;}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner {padding: 0; border: none}
+
 body{
 	background: #260930;
 	font-size: 12px;
@@ -8,6 +32,7 @@ body{
 h1{
 	font-size: 26px;
 	padding: 0 0 0px 10px;
+	margin: 0 0 12px;
 }
 
 #quotesWrapper{
@@ -28,6 +53,9 @@ h1{
     border: 1px solid #59B0B6; 
 	text-align: right;
 	position: relative;
+	min-height: 108px;
+	height: auto !important;
+	height: 108px;
 }
 
 .quote *{
@@ -40,6 +68,7 @@ h1{
 	min-height: 46px;
 	height: auto !important;
 	height: 46px;
+	line-height: 1.2em;
 }
 
 .quote .changePercentage{
@@ -84,4 +113,22 @@ h1{
 
 .quote .lastTradeTime{
 	display: none;
+}
+
+/* for 640px or less */
+@media screen and (max-width: 700px){
+	#quotesWrapper{
+		width: 100%;
+		margin: 0;
+		padding: 20px 0 0;
+	}
+	.quote{
+		width: 100%;
+		float: none;
+		margin: 0 0 0.1em;
+		padding: 20px 0;
+	}
+	.quote *{
+		padding: 0 20px 0 140px;
+	}
 }
