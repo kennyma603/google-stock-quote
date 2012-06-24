@@ -8,6 +8,37 @@
 	<![endif]-->
 	<script src="script.js"></script>
 	<link rel="stylesheet" href="style.css" />
+
+
+<script type="text/javascript">
+  (function($){
+    $(document).ready(function(){
+        $("#quotesWrapper").googleStockQuote(
+          {
+            stocks : {
+              'MUTF_CA:TDB900' : 'TD Canadian Index - e',
+              'MUTF_CA:TDB909' : 'TD Canadian Bond Index - e',
+              'MUTF_CA:TDB902' : 'TD US Index - e',
+              'MUTF_CA:TDB911' : 'TD International Index - e',
+              'MUTF_CA:CIB830' : 'CIBC Managed Income',
+              'MUTF_CA:CIB512' : 'CIBC Monthly Income',
+              'MUTF_CA:TDB908' : 'TD Nasdaq Index - e',
+              'MUTF_CA:TDB907' : 'TD Japanese Index - e',
+              'MUTF_CA:TDB851' : 'TD Managed Index Income (Moderate) - e'
+              },
+            showName: true,
+            showSymbol : true,
+            showlastTradeTime : false,
+            showPrice : true,
+            showChange : true,
+            showChangePercentage : true,
+          }
+        );
+    });
+  })(jQuery);
+</script>
+
+
   </head>
   <body>
     <div id="quotesWrapper">

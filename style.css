@@ -112,7 +112,7 @@ h1{
 
 
 .quote .lastTradeTime{
-	display: none;
+	/*display: none;*/
 }
 
 /* for 640px or less */
